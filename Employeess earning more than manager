@@ -1,0 +1,7 @@
+// using self join we can solve this question
+
+SELECT E.name AS Employee
+FROM Employee E
+JOIN Employee M
+ON E.managerId = m.Id
+WHERE E.salary > M.salary;
